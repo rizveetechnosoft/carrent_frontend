@@ -31,7 +31,7 @@ const SignUpForm = () => {
 
     const hashedPassword = bcrypt.hashSync(password.current.value);
     axios
-      .post("http://127.0.0.1:8000/api/signup", {
+      .post("http://carrent.arifrizveezishan.xyz/api/signup", {
         firstname: firstname.current.value,
         lastname: lastname.current.value,
         telephone: telephone.current.value,

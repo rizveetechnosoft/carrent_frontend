@@ -15,8 +15,8 @@ const SearchInput = ({ type }) => {
 
     const fetchData = async () => {
       if (["rents", "users", "cars"].includes(type)) {
-        try {
-          const response = await axios.get(`http://127.0.0.1:8000/api/${type}`);
+        try {h
+          const response = await axios.get(`http://carrent.arifrizveezishan.xyz/api/${type}`);
           if (!cancelRequest) {
             setData(response.data.data);
             setSearchResults([]);

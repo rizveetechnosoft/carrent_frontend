@@ -31,7 +31,7 @@ function Profile() {
 
   useEffect(() => {
     axios
-      .get(`http://127.0.0.1:8000/api/users/${user_id}/rents`)
+      .get(`http://carrent.arifrizveezishan.xyz/api/users/${user_id}/rents`)
       .then((response) => {
         setRents(response.data.data);
       });

@@ -17,7 +17,7 @@ function BookCars() {
   const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("http://127.0.0.1:8000/api/cars").then((response) => {
+    axios.get("http://carrent.arifrizveezishan.xyz/api/cars").then((response) => {
       setCars(response.data.data);
       setLoading(false);
     });

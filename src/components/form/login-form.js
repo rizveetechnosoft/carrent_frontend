@@ -22,7 +22,7 @@ const LoginForm = () => {
     e.preventDefault();
 
     axios
-      .post("http://127.0.0.1:8000/api/login", {
+      .post("http://carrent.arifrizveezishan.xyz/api/login", {
         email: email.current.value,
       })
       .then((response) => {
