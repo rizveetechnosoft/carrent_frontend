@@ -49,13 +49,13 @@ function Dashboard() {
 
   const handleData = (type) => {
     if (type == "Users") {
-      axios.get("http://carrent.arifrizveezishan.xyz/api/users").then((response) => {
+      axios.get("http://carrent_backend.arifrizveezishan.xyz/api/users").then((response) => {
         setHeader(["id", "firstname", "lastname", "telephone", "email"]);
         setData(response.data.data);
         setType("users");
       });
     } else if (type == "Cars") {
-      axios.get("http://carrent.arifrizveezishan.xyz/api/cars").then((response) => {
+      axios.get("http://carrent_backend.arifrizveezishan.xyz/api/cars").then((response) => {
         setHeader([
           "id",
           "brand",
@@ -69,7 +69,7 @@ function Dashboard() {
         setType("cars");
       });
     } else if (type == "Rents") {
-      axios.get("http://carrent.arifrizveezishan.xyz/api/rents").then((response) => {
+      axios.get("http://carrent_backend.arifrizveezishan.xyz/api/rents").then((response) => {
         setHeader([
           "id",
           "rental_date",
@@ -85,7 +85,7 @@ function Dashboard() {
   };
 
   const handleUpdateItem = (itemId, updatedItem) => {
-    const endpoint = `http://carrent.arifrizveezishan.xyz/api/${type}/${itemId}`;
+    const endpoint = `http://carrent_backend.arifrizveezishan.xyz/api/${type}/${itemId}`;
 
     axios
       .put(endpoint, updatedItem)
@@ -109,7 +109,7 @@ function Dashboard() {
   };
 
   const handleDelete = (id) => {
-    const endpoint = `http://carrent.arifrizveezishan.xyz/api/${type}/${id}`;
+    const endpoint = `http://_backend.arifrizveezishan.xyz/api/${type}/${id}`;
 
     axios
       .delete(endpoint)

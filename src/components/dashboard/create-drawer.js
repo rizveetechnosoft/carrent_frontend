@@ -30,7 +30,7 @@ function CreateItemDrawer({ dataType, onUpdate }) {
   const handleSubmit = () => {
     console.log(formData);
     axios
-      .post(`http://carrent.arifrizveezishan.xyz/api/${dataType}`, formData)
+      .post(`http://carrent_backend.arifrizveezishan.xyz/api/${dataType}`, formData)
       .then((response) => {
         console.log(response.data.data);
         onClose();

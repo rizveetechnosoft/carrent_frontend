@@ -31,7 +31,7 @@ const SignUpForm = () => {
 
     const hashedPassword = bcrypt.hashSync(password.current.value);
     axios
-      .post("http://carrent.arifrizveezishan.xyz/api/signup", {
+      .post("http://carrent_backend.arifrizveezishan.xyz/api/signup", {
         firstname: firstname.current.value,
         lastname: lastname.current.value,
         telephone: telephone.current.value,

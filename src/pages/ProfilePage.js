@@ -31,7 +31,7 @@ function Profile() {
 
   useEffect(() => {
     axios
-      .get(`http://carrent.arifrizveezishan.xyz/api/users/${user_id}/rents`)
+      .get(`http://carrent_backend.arifrizveezishan.xyz/api/users/${user_id}/rents`)
       .then((response) => {
         setRents(response.data.data);
       });

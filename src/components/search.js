@@ -15,8 +15,8 @@ const SearchInput = ({ type }) => {
 
     const fetchData = async () => {
       if (["rents", "users", "cars"].includes(type)) {
-        try {h
-          const response = await axios.get(`http://carrent.arifrizveezishan.xyz/api/${type}`);
+        try {
+          const response = await axios.get(`http://carrent_backend.arifrizveezishan.xyz/api/${type}`);
           if (!cancelRequest) {
             setData(response.data.data);
             setSearchResults([]);

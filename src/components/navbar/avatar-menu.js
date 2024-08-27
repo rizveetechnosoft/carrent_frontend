@@ -32,7 +32,7 @@ const AvatarMenu = () => {
     e.preventDefault();
 
     axios
-      .get("http://carrent.arifrizveezishan.xyz/api/logout")
+      .get("http://carrent_backend.arifrizveezishan.xyz/api/logout")
       .then((response) => {
         localStorage.clear();
         //setIsLoggedIn(false);

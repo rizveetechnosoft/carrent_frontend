@@ -22,7 +22,7 @@ const LoginForm = () => {
     e.preventDefault();
 
     axios
-      .post("http://carrent.arifrizveezishan.xyz/api/login", {
+      .post("http://carrent_backend.arifrizveezishan.xyz/api/login", {
         email: email.current.value,
       })
       .then((response) => {

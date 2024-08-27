@@ -44,7 +44,7 @@ function ProfileDrawer() {
 
   const handleSubmit = () => {
     axios
-      .put(`http://carrent.arifrizveezishan.xyz/api/user/${user_id}`, formData)
+      .put(`http://carrent_backend.arifrizveezishan.xyz/api/user/${user_id}`, formData)
       .then((response) => {
         console.log(response.data);
         const updatedUser = response.data.data;

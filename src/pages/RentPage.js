@@ -43,7 +43,7 @@ function Rent() {
 
   useEffect(() => {
     axios
-      .get(`http://carrent.arifrizveezishan.xyz/api/cars/${params.id}`)
+      .get(`http://carrent_backend.arifrizveezishan.xyz/api/cars/${params.id}`)
       .then((response) => {
         setCar(response.data.data[0]);
         setLoading(false);
@@ -107,7 +107,7 @@ function Rent() {
       console.log(rent);
       if (rentalDate.current.value != "" && returnDate.current.value != "") {
         axios
-          .post("http://carrent.arifrizveezishan.xyz/api/rents", rent)
+          .post("http://carrent_backend.arifrizveezishan.xyz/api/rents", rent)
           .then((response) => {
             showToast(
               toast,
